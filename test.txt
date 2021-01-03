@@ -1,0 +1,2 @@
+A simple responsive website based in HTML5, CSS3, JS.
+The purpose of this project is to remember the functions and the connections in order to achieve the best outcome.
