@@ -21,6 +21,8 @@ const showMenu = (toggleId, navId) => {
 showMenu("nav-toggle", "nav-menu");
 
 /*------------Scroll----------------*/
+// the scrollY property we are using here returns the number of pixels
+//that the document is currently scrolled vertically.
 function scrollHeader(){
     const nav = document.getElementById('header')
     //When the property is greater than 200 viewport height, add to the header tag
@@ -68,3 +70,15 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+/*-----------------Active scroll-------------------*/
+// we creating a variable called sections that it will use a method called querySelectorAll
+// this method presents us a list of elements match whose match the specific group of selectors
+// on which we appoint this method.
+// grabs all anchor elements with an id attribute set
+const sections=document.querySelectorAll('section[id]')
+
+function scrollActive(){
+    const scrollY = window.pageAOffset
+    
+}
