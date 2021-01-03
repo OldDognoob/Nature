@@ -1,19 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--------Box Icon Style------------>
-   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-   <!-------Cascade Style Sheets-------->
-<link rel="stylesheet" href="css/style.css">
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-------Cascade Style Sheets-------->
+    <link rel="stylesheet" href="css/style.css" />
 
     <title>Nature</title>
-</head>
-<body>
+  </head>
+  <body>
     <!------Scroll To The Top---------->
-
+    <a href="#" class="scrolltop" id="scroll-top">
+      <i class="bx bx-chevron-up scrolltop__icon"></i>
+    </a>
     <!-------Header------->
-    
-</body>
+    <header class="l-header" id="header">
+      <nav class="nav bd-container">
+        <a href="#" class="nav__logo">Nature</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#menu" class="nav__link">Salads</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact us</a>
+            </li>
+
+            <li><i class="bx bx-moon change-theme" id="theme-button"></i></li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <!-------Home------->
+      <section class="home" id="home">
+        <div class="home__container bd-container bd-grid">
+          <div class="home__data">
+            <h1 class="home__title">Nature</h1>
+            <h2 class="home__subtitle">
+              The best fresh Greek Salads from nature <br />
+              straight to your table.
+            </h2>
+            <a href="#" class="button">View Menu</a>
+          </div>
+
+          <img src="img/Salad About.jpg" alt="" class="home__img" />
+        </div>
+      </section>
+      <!-------About------->
+      <section class="about section bd-container" id="about">
+        <div class="about__container bd-grid">
+          <div class="about__data">
+            <span class="section-subtitle about__initial">About us</span>
+            <h2 class="section-title about__initial">
+              We create with nature ingredients <br />
+              Greek Salads of your choice
+            </h2>
+            <p class="about__description">
+              From the Greek land to your table.Our Salad is not a meal, it is
+              our style to bring people together, visit us.
+            </p>
+            <a href="#" class="button">Explore history</a>
+          </div>
+
+          <img src="img/Salad About.jpg" alt="" class="about__img" />
+        </div>
+      </section>
+      <!-------Zeus Menu------->
+      <section class="menu section bd-container" id="menu">
+        <span class="section-subtitle">Salads</span>
+        <h2 class="section-title">Greek FatherLand</h2>
+
+        <div class="menu__container bd-grid">
+          <div class="menu__content">
+            <img src="img/Greek Salad dish1.jpg" alt="" class="menu__img" />
+            <h3 class="menu__name">Greek Salad with olives</h3>
+            <span class="menu__detail">Fresh dish</span>
+            <span class="menu__preci">€3.50</span>
+            <a href="#" class="button menu__button"
+              ><i class="bx bx-cart-alt"></i
+            ></a>
+          </div>
+
+          <div class="menu__content">
+            <img src="img/Greek Salad dish2.jpg" alt="" class="menu__img" />
+            <h3 class="menu__name">Salad with feta cheese</h3>
+            <span class="menu__detail"
+              >A delicious salad to make you feel different</span
+            >
+            <span class="menu__preci">€5.00</span>
+            <a href="#" class="button menu__button"
+              ><i class="bx bx-cart-alt"></i
+            ></a>
+          </div>
+
+          <div class="menu__content">
+            <img src="img/Salad dish3.jpg" alt="" class="menu__img" />
+            <h3 class="menu__name">Tuna salad</h3>
+            <span class="menu__detail">Delicious tuna dish</span>
+            <span class="menu__preci">€2.50</span>
+            <a href="#" class="button menu__button"
+              ><i class="bx bx-cart-alt"></i
+            ></a>
+          </div>
+
+          <div class="menu__content">
+            <img src="img/Salad dish4.jpg" alt="" class="menu__img" />
+            <h3 class="menu__name">Chicken salad</h3>
+            <span class="menu__detail"
+              >Delicious chicken salad for extra Zeus power</span
+            >
+            <span class="menu__preci">€4.65</span>
+            <a href="#" class="button menu__button"
+              ><i class="bx bx-cart-alt"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+      <!-------Contact us------->
+      <section class="contact section bd-container" id="contact">
+        <div class="contact__container bd-grid">
+          <div class="contact__data">
+            <span class="section-subtitle contact__initial">Visit us</span>
+            <h2 class="section-title contact__initial">Contact us</h2>
+            <p class="contact__description">
+              You can taste our fresh Greek Salads every time, visit us,we are
+              open 24/7.
+            </p>
+          </div>
+
+          <div class="contact__button">
+            <a href="#" class="button">Contact us now</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-------Footer------->
+    <footer class="footer section bd-container">
+      <div class="footer__container bd-grid">
+        <div class="footer__content">
+          <a href="#" class="footer__logo">Nature</a>
+          <div>
+            <a href="#" class="footer__social"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+            <a href="#" class="footer__social"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a href="#" class="footer__social"
+              ><i class="bx bxl-twitter"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Services</h3>
+          <ul>
+            <li><a href="#" class="footer__link">Pricing</a></li>
+            <li><a href="#" class="footer__link">Salad</a></li>
+            <li>
+              <a href="#" class="footer__link">Find your place among Zeus</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Information</h3>
+          <ul>
+            <li><a href="#" class="footer__link">Contact us</a></li>
+            <li><a href="#" class="footer__link">Privacy policy</a></li>
+            <li><a href="#" class="footer__link">Terms of services</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Address</h3>
+          <ul>
+            <li>Larisa - Greece</li>
+            <li>Kyprou 13 41222</li>
+            <li>+30 2410-256-363</li>
+            <li>nature@zeus.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="footer__copy">&#169; 2021 Zeus. Zeus rights reserved</p>
+    </footer>
+    <!-------Scroll------->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-------main js------->
+    <!-------Scroll------->
+  </body>
 </html>
