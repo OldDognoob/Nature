@@ -129,7 +129,7 @@ const sr = ScrollReveal({
 sr.reveal(`.home__data, .home__img,
             .about__data, .about__img,
             .menu__content, .contact__data, 
-            .contact__button, .footer__content`{
+            .contact__button, .footer__content`,{
               // we are passing a sequence interval in our method, in milliseconds
     interval: 200
 })
