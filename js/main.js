@@ -113,3 +113,23 @@ function scrollActive() {
   });
 }
 window.addEventListener("scroll", scrollActive);
+
+/*-----------------Scroll Animation--------------------*/
+// the ScrollReveal is a js animation library that gives us the ability to add some animations 
+// to our pages. We are able to make any HTML element to fade from any direction, distance, duration or style.
+// here we adding the code bellow to initialize the library
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '30px',
+  duration: 2000,
+  reset: true
+});
+// we are including a js object that matches the name of our ScrollReveal
+// in order to adjust functionality with the keywords we are using in our documentation
+sr.reveal(`.home__data, .home__img,
+            .about__data, .about__img,
+            .menu__content, .contact__data, 
+            .contact__button, .footer__content`{
+              // we are passing a sequence interval in our method, in milliseconds
+    interval: 200
+})
